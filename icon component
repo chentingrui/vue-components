@@ -1,0 +1,46 @@
+<template>
+  <span class="hr-icon" :style="style" @click="onClick"></span>
+</template>
+
+<script>
+export default {
+  props: {
+    size: String,
+    src: String,
+    ratio3: Boolean
+  },
+  data () {
+    return {
+      url: String,
+      style: Object
+    }
+  },
+  created: function () {
+    let isRetina = window.devicePixelRatio > 1
+
+    let prefix = /localhost/.test(window.location.host) ? '/static/icons/' : '/genie-web/static/icons/'
+
+    let src = isRetina ? this.src.replace(/(\.png)/, '@2x.png') : this.src
+
+    let size = this.size.split(',')
+    this.style = {
+      'width': `${size[0]}px`,
+      'height': `${size[1]}px`,
+      'display': 'inline-block',
+      'vertical-align': 'bottom',
+      'background': `url(${prefix}${src}) no-repeat center`,
+      'background-size': `${size[2]}px ${size[3]}px`
+    }
+  },
+  methods: {
+    onClick () {
+      this.$emit('click')
+    }
+  }
+}
+</script>
+<style scoped>
+.hr-icon{
+
+}
+</style>
