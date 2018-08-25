@@ -10,7 +10,7 @@ As a UI component your code can not contaminate the page which importing, so all
 	    <th> Summary </th>
 	  </tr>
 	  <tr>
-	    <td>[Avator](https://github.com/chentingrui/vue-components/blob/master/Avatar.vue)</td>
+	    <td>[点击这里你可以链接到www.google.com](http://www.google.com)</td>
 	    <td>avator component</td>
 	  </tr>
     </table>
