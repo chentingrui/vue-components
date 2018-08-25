@@ -6,12 +6,12 @@ As a UI component your code can not contaminate the page which importing, so all
 <div>
     <table border="0">
 	  <tr>
-	    <th>one</th>
-	    <th>two</th>
+	    <th> Component </th>
+	    <th> Summary </th>
 	  </tr>
 	  <tr>
-	    <td>Hello</td>
-	    <td>你好</td>
+	    <td>[Avator](https://github.com/chentingrui/vue-components/blob/master/Avatar.vue)</td>
+	    <td>avator component</td>
 	  </tr>
-	</table>
+    </table>
 </div>
